@@ -1,0 +1,22 @@
+ALGORITHM array_sum_two_element
+VAR
+  tab : ARRAY_OF type[50];
+  i,n : INTEGER; 
+BEGIN
+   // Read the size
+   Read(n);
+   // Read elements
+   FOR i FROM 0 TO n-1 STEP 1  DO
+       Read(tab[i]);
+   END_FOR
+   // Add successive element
+   FOR i FROM 0 TO n-2 STEP 1  DO
+   tab[i] := tab[i]+tab[i+1];
+   END_FOR
+   // Display the array
+   FOR i FROM 0 TO n-1 STEP 1  DO
+       Write(tab[i])
+   END_FOR
+   sum := [tab1]+[tab2]
+   
+END
