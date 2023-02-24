@@ -1,13 +1,14 @@
 ALGORITHM Dot product
     VAR
-        V1, V2 : ARRAY_OF INTEGER
-        i,j : INTEGER
+        V1, V2 : ARRAY_OF INTEGER 
+        i,j, n: INTEGER
         P : REAL
     BEGIN
+        P:=0
         REPEAT
         write(paire des vecteurs donnes)
         read(n)
-        UNTIL (n)
+        UNTIL (n=2)
         FOR i FROM 0 TO 2 STEP step  DO
             FOR j FROM 0 TO 2 STEP step  DO
             write("les elements de vecteur V1")
