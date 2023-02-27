@@ -29,4 +29,15 @@ BEGIN
       sum:=sum+set1[i];
     END_IF
   END_FOR
+    FOR j FROM 0 TO n2-1 STEP step  DO
+    FOR i FROM 0 TO n1-1 STEP step  DO
+      IF (set2[j]=set1[i]) THEN
+      exist:=true;
+        Break;
+      END_IF
+    END_FOR
+    IF (exist:=false) THEN
+      sum:=sum+set1[j];
+    END_IF
+  END_FOR
   END
