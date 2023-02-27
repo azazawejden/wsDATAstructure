@@ -2,7 +2,7 @@ ALGORITHM Dot product
     VAR
         V1, V2 : ARRAY_OF INTEGER 
         i,j, n: INTEGER
-        P : REAL
+        Ps : FLOAT
     BEGIN
         P:=0
         REPEAT
@@ -16,11 +16,11 @@ ALGORITHM Dot product
             write("les elements de vecteur V")
             read(V2)
             END_FOR
-            P:= P+ V1(i,j)*V2(i,j)
+            Ps:= Ps+ V1(i,j)*V2(i,j)
         END_FOR
         write(le produit scalaire des vecteur V1 et V2)
         read(P)
-        IF (P=0) THEN
+        IF (Ps=0) THEN
             write(les deux vecteurs sont orthogonaux)
         END_IF
     END
